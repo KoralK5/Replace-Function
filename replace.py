@@ -3,7 +3,7 @@ def replace(lst, ins, s):
 	for row in range(len(lst)):
 		if lst[row] == s:
 			try:
-				lst[row] = ins[occurrence]
+				lst[row] = ins[occurrence%len(ins)]
 				occurrence += 1
 			except:
 				pass
